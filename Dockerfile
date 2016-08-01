@@ -8,4 +8,6 @@ RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-d
 # Display version information
 RUN composer --version
 
+WORKDIR /app
+
 CMD composer
